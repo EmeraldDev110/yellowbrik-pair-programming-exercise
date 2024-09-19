@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.654.0",
+    "aws-sdk": "^2.1691.0",
+    "dotenv": "^16.4.5",
+    "dynalite": "^3.2.2",
+    "express": "^4.21.0",
+    "redis": "^4.7.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.5",
+    "supertest": "^7.0.0"
+  },
+  "scripts": {
+    "start": "node -r dotenv/config index.js",
+    "dev": "nodemon -r dotenv/config index.js",
+    "test": "jest --env=node"
+  }
+}
